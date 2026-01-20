@@ -6645,6 +6645,21 @@ small,
     --bs-dark-bg-subtle: #CED4DA;
     --bs-dark-text-emphasis: #0D0E10;
 }
+.tokenomics-main-box {
+    margin-top: -11rem;
+}
+@media (max-width: 991px) {
+    .tokenomics-main-box {
+        margin-top: 0;
+    }
+}
+body {
+    background-image: url('../img/rbb.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 /* Border */
 .border-primary-emphasis {
     border-color: var(--bs-primary-text-emphasis) !important;
