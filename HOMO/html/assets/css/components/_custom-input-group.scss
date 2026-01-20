@@ -1,0 +1,15 @@
+/*Custom Input Group*/
+.custom-input-group {
+	.form-control {
+		border: none;
+		color: var(--bs-dark);
+        font-size: 1.5rem;
+		background-color: transparent;
+	}
+	.form-select {
+		width: auto;
+		border: 1px solid var(--bs-dark);
+		background-color: var(--bs-secondary);
+		color: var(--bs-dark);
+	}
+}

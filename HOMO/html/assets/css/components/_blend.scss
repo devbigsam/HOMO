@@ -1,0 +1,26 @@
+/* Blend Background */
+
+.blend-x {
+	mask: linear-gradient(90deg, transparent, white 25%, white 75%, transparent);
+}
+.blend-y {
+	mask: linear-gradient(transparent, white 25%, white 75%, transparent);
+}
+.blend-y-start-15 {
+	mask: linear-gradient(transparent 15%, white);
+}
+.blend-y-end-15 {
+	mask: linear-gradient(white 15%, transparent);
+}
+.blend-y-start-25 {
+	mask: linear-gradient(transparent 25%, white);
+}
+.blend-y-end-25 {
+	mask: linear-gradient(white 25%, transparent);
+}
+.blend-y-start-50 {
+	mask: linear-gradient(transparent 50%, white);
+}
+.blend-y-end-50 {
+	mask: linear-gradient(white 50%, transparent);
+}

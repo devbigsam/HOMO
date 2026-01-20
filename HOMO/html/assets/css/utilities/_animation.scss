@@ -1,0 +1,145 @@
+/*Animations*/
+@keyframes pulse {
+	100% {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+
+@keyframes imageBeat {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(0.7);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes scroll {
+	to {
+		transform: translate(calc(-50% - 0.5rem));
+	}
+}
+@keyframes scrollY {
+	to {
+		transform: translateY(calc(-50% - 0.5rem));
+	}
+}
+@keyframes bounce {
+	from,
+	50%,
+	to {
+		animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+		transform: translateY(0.5em);
+	}
+	25%,
+	75% {
+		animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+		transform: translateY(5.1em);
+	}
+}
+@keyframes flare1 {
+	from,
+	75%,
+	to {
+		animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+		transform: scale(0);
+	}
+	87.5% {
+		animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+		transform: scale(1);
+	}
+}
+@keyframes flare2 {
+	from,
+	to {
+		animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+		transform: scale(1);
+	}
+	12.5%,
+	87.5% {
+		animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+		transform: scale(0);
+	}
+}
+@keyframes flare3 {
+	from,
+	25%,
+	50%,
+	to {
+		animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+		transform: scale(0);
+	}
+	37.5% {
+		animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+		transform: scale(1);
+	}
+}
+@keyframes flare4 {
+	from,
+	37.5%,
+	62.5%,
+	to {
+		animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+		transform: scale(0);
+	}
+	50% {
+		animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+		transform: scale(1);
+	}
+}
+@keyframes inscription-front {
+	from,
+	75% {
+		animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+		box-shadow: 0.1875em 0 0 hsl(var(--hue2), 90%, 40%) inset;
+	}
+	87.49% {
+		animation-timing-function: steps(1);
+		box-shadow: 0.875em -0.75em 0 hsl(var(--hue2), 90%, 40%) inset;
+	}
+	87.5% {
+		animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+		box-shadow: -0.875em 0.75em 0 hsl(var(--hue2), 90%, 40%) inset;
+	}
+	to {
+		box-shadow: 0.1875em 0 hsl(var(--hue2), 90%, 40%) inset;
+	}
+}
+@keyframes inscription-back {
+	from,
+	75% {
+		box-shadow: -1em -0.875em 0 hsl(var(--hue2), 90%, 40%) inset;
+	}
+	to {
+		box-shadow: 1.125em 1em 0 hsl(var(--hue2), 90%, 40%) inset;
+	}
+}
+@keyframes roll {
+	from,
+	75% {
+		transform: rotateY(-15deg) rotateZ(-30deg) rotateY(0);
+	}
+	to {
+		transform: rotateY(-15deg) rotateZ(-30deg) rotateY(-1turn);
+	}
+}
+@keyframes shadow {
+	from,
+	50%,
+	to {
+		animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+		background-color: rgba(var(--bs-black-rgb), 0.5);
+		transform: scale(0.6);
+	}
+	25%,
+	75% {
+		animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+		background-color: rgba(var(--bs-black-rgb), 0.75);
+		transform: scale(1);
+	}
+}

@@ -1,0 +1,12 @@
+/*How to Buy Section 1*/
+@use "../global" as *;
+.how-to-buy-section-1 {
+	position: relative;
+	isolation: isolate;
+	@include screen(md) {
+		background-image: url(../img/shape/how-to-buy-bg-1.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center;
+	}
+}

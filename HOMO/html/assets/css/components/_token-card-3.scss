@@ -1,0 +1,12 @@
+/*Token Card 3*/
+@use "../global" as *;
+.token-card-3 {
+	padding: 3rem;
+	background-image: url(../img/shape/how-to-card-bg-1.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	@include screen(sm) {
+		padding: rem(90) 3rem;
+	}
+}

@@ -1,0 +1,16 @@
+/*Counter 1*/
+@use "../global/" as *;
+.counter-1 {
+	min-width: rem(250);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	background-image: linear-gradient(var(--bs-secondary-bg-subtle), var(--bs-secondary));
+	@include screen(md) {
+		min-width: rem(300);
+	}
+	&__text {
+		font-size: var(--h3);
+	}
+}

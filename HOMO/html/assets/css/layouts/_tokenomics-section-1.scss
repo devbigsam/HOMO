@@ -1,0 +1,50 @@
+/*Tokenomics Section 1*/
+@use "../global" as *;
+.tokenomics-section-1 {
+	position: relative;
+	isolation: isolate;
+	&__img {
+		display: none;
+		@include screen(lg) {
+			display: block;
+			position: absolute;
+			z-index: -1;
+			pointer-events: none;
+		}
+		&--1 {
+			bottom: 0;
+			left: 0;
+			@media (min-width: 1600px) {
+				left: 5%;
+			}
+			@media (min-width: 1920px) {
+				left: 10%;
+			}
+			@media (min-width: 2500px) {
+				left: 20%;
+			}
+		}
+		&--2 {
+			bottom: 0;
+			left: 0;
+			z-index: -2;
+			@media (min-width: 2500px) {
+				left: 2%;
+			}
+		}
+		&--3 {
+			top: 5%;
+			right: 0;
+			@media (min-width: 1920px) {
+				right: 5%;
+			}
+		}
+		&--4 {
+			top: 50%;
+			right: 0;
+			@media (min-width: 1920px) {
+				right: 10%;
+			}
+		}
+	}
+}

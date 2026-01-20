@@ -1,0 +1,45 @@
+/*About Card 1*/
+@use "../global" as *;
+.about-card-1 {
+	padding-inline: 1.5rem;
+	position: relative;
+	isolation: isolate;
+
+	@include screen(md) {
+		padding-inline: 8rem;
+		background-image: url(../img/shape/about-card-1-bg.png);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	@include screen(xl) {
+		padding-inline: 12rem;
+	}
+	&__element {
+		display: none;
+		@include screen(lg) {
+			display: block;
+			position: absolute;
+			pointer-events: none;
+		}
+		&--1 {
+			@include screen(lg) {
+				top: 0;
+				left: 0;
+			}
+			@include screen(xl) {
+				left: 10%;
+			}
+		}
+		&--2 {
+			@include screen(lg) {
+				top: 0;
+				right: 10%;
+				transform: translateY(-50%);
+			}
+			@include screen(xl) {
+				right: 15%;
+			}
+		}
+	}
+}

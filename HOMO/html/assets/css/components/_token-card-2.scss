@@ -1,0 +1,12 @@
+/*Token Card 2*/
+@use "../global" as *;
+.token-card-2 {
+	@include screen(sm) {
+        position: relative;
+        isolation: isolate;
+		mask-image: url(../img/shape/token-card-bg-2.png);
+		mask-size: 100% 100%;
+		mask-position: center bottom;
+		mask-repeat: no-repeat;
+	}
+}

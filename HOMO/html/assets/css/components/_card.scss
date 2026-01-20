@@ -1,0 +1,7 @@
+/* Card Style */
+@use "../global" as *;
+.card {
+	--bs-card-spacer-y: 1.5rem;
+	--bs-card-spacer-x: 1.5rem;
+	--bs-border-radius: 0.5rem;
+}

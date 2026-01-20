@@ -1,0 +1,48 @@
+/*Road Map Section 2*/
+@use "../global" as *;
+.road-map-section-2 {
+    position: relative;
+    isolation: isolate;
+	background-image: url(../img/shape/road-map-bg-1.png);
+	background-size: cover;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	&__element {
+		display: none;
+		@include screen(xl) {
+			display: block;
+            position: absolute;
+            z-index: -1;
+		}
+        &--1 {
+            @include screen(xl) {
+                right: 2%;
+                bottom: 5%;
+            }
+        }
+        &--2 {
+            @include screen(xl) {
+                left: 8%;
+                top: 25%;
+            }
+        }
+        &--3 {
+            @include screen(xl) {
+                right: 8%;
+                top: 25%;
+            }
+        }
+        &--4 {
+            @include screen(xl) {
+                right: 25%;
+                top: 15%;
+            }
+        }
+        &--5 {
+            @include screen(xl) {
+                right: 10%;
+                top: 15%;
+            }
+        }
+	}
+}

@@ -1,0 +1,21 @@
+/*Text Stroke*/
+.text-stroke {
+	-webkit-text-stroke-width: 0.25rem;
+	-webkit-text-stroke-color: var(--bs-dark);
+	paint-order: stroke fill;
+}
+.text-stroke-md {
+	-webkit-text-stroke-width: 0.5rem;
+	-webkit-text-stroke-color: var(--bs-dark);
+	paint-order: stroke fill;
+}
+.text-stroke-lg {
+	-webkit-text-stroke-width: 0.75rem;
+	-webkit-text-stroke-color: var(--bs-dark);
+	paint-order: stroke fill;
+}
+.text-stroke-xl {
+	-webkit-text-stroke-width: 1rem;
+	-webkit-text-stroke-color: var(--bs-dark);
+	paint-order: stroke fill;
+}

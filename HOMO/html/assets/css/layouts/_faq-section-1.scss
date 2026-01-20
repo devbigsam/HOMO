@@ -1,0 +1,31 @@
+/*FAQ Section 1*/
+@use "../global" as *;
+.faq-section-1 {
+	position: relative;
+	isolation: isolate;
+	background-image: url(../img/shape/faq-bg-1.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	&__element {
+		display: none;
+		@include screen(xl) {
+			display: block;
+			position: absolute;
+			z-index: -1;
+			pointer-events: none;
+		}
+		&--1 {
+			@include screen(xl) {
+				top: 10%;
+				left: 15%;
+			}
+		}
+		&--2 {
+			@include screen(xl) {
+				bottom: 10%;
+				right: 15%;
+			}
+		}
+	}
+}

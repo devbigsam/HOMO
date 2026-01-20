@@ -1,0 +1,16 @@
+/*Ticker 1*/
+@use "../global" as *;
+.ticker-1 {
+	margin-top: -#{rem(36)};
+	box-shadow: 0 0.5rem 0 0 var(--bs-dark);
+	transform: rotate(-3deg);
+	@media (min-width: 1600px) {
+		margin-top: -#{rem(45)};
+	}
+	@media (min-width: 1920px) {
+		margin-top: -#{rem(52)};
+	}
+	@media (min-width: 2400px) {
+		margin-top: -#{rem(68)};
+	}
+}

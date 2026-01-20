@@ -1,0 +1,124 @@
+/*Hero 1*/
+@use "../global" as *;
+.hero-1 {
+	position: relative;
+	isolation: isolate;
+	&__title {
+		font-size: clamp(3.75rem, 6.315vw + 1rem, 7.5rem);
+	}
+	&__element {
+		display: none;
+		@include screen(lg) {
+			display: block;
+			position: absolute;
+			z-index: -1;
+		}
+		&--1 {
+			@include screen(lg) {
+				top: 10%;
+				left: 4%;
+			}
+		}
+		&--2 {
+			@include screen(lg) {
+				top: 25%;
+				left: 10%;
+			}
+		}
+		&--3 {
+			@include screen(lg) {
+				top: 45%;
+				left: 15%;
+			}
+		}
+		&--4 {
+			@include screen(lg) {
+				top: 60%;
+				left: 5%;
+			}
+			@media (min-width: 1920px) {
+				top: 50%;
+				left: 25%;
+			}
+		}
+		&--5 {
+			@include screen(lg) {
+				top: 15%;
+				right: 5%;
+			}
+			@media (min-width: 1920px) {
+				right: 12%;
+			}
+		}
+		&--6 {
+			@include screen(lg) {
+				top: 25%;
+				right: 5%;
+			}
+			@media (min-width: 1920px) {
+				right: 15%;
+			}
+		}
+		&--7 {
+			@include screen(lg) {
+				top: 45%;
+				right: 3%;
+			}
+		}
+		&--8 {
+			@include screen(lg) {
+				top: 40%;
+				left: 30%;
+			}
+		}
+		&--9 {
+			@include screen(lg) {
+				top: 60%;
+				left: 5%;
+			}
+			@media (min-width: 1920px) {
+				top: 65%;
+				left: 13%;
+			}
+		}
+		&--10 {
+			@include screen(lg) {
+				top: 80%;
+				left: 5%;
+			}
+			@media (min-width: 1920px) {
+				top: 75%;
+				left: 18%;
+			}
+		}
+		&--11 {
+			@include screen(lg) {
+				top: 45%;
+				right: 20%;
+			}
+			@media (min-width: 1920px) {
+				top: 48%;
+				right: 25%;
+			}
+		}
+		&--12 {
+			@include screen(lg) {
+				top: 60%;
+				right: 8%;
+			}
+			@media (min-width: 1920px) {
+				right: 15%;
+			}
+		}
+		&--13 {
+			@include screen(lg) {
+				top: 80%;
+				right: 10%;
+			}
+			@media (min-width: 1920px) {
+				top: 75%;
+				right: 20%;
+			}
+		}
+	}
+}

@@ -1,0 +1,50 @@
+/*Hero 2*/
+@use "../global" as *;
+.hero-2 {
+	position: relative;
+	isolation: isolate;
+	&__element {
+		display: none;
+		@include screen(lg) {
+			display: block;
+			position: absolute;
+			z-index: -1;
+		}
+		&--1 {
+			@include screen(lg) {
+				top: 30%;
+				left: 10%;
+			}
+		}
+		&--2 {
+			@include screen(lg) {
+				top: 50%;
+				right: 10%;
+			}
+		}
+		&--3 {
+			@include screen(lg) {
+				top: 20%;
+				left: 5%;
+			}
+		}
+		&--4 {
+			@include screen(lg) {
+				top: 10%;
+				left: 20%;
+			}
+		}
+		&--5 {
+			@include screen(lg) {
+				top: 20%;
+				right: 15%;
+			}
+		}
+		&--6 {
+			@include screen(lg) {
+				top: 10%;
+				right: 5%;
+			}
+		}
+	}
+}

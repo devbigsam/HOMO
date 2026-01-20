@@ -1,0 +1,7 @@
+/* Banner Style */
+.banner {
+	padding-top: clamp(8.75rem, 10.5vw + 1rem, 12.5rem);
+	padding-bottom: clamp(6.5rem, 7.89vw + 1rem, 9.375rem);
+	position: relative;
+	isolation: isolate;
+}

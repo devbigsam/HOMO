@@ -1,0 +1,10 @@
+/*Road Map Section 3*/
+@use "../global" as *;
+.road-map-section-3 {
+	position: relative;
+	isolation: isolate;
+	background-image: url(../img/shape/road-map-bg-2.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}

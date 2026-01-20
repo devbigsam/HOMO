@@ -1,0 +1,75 @@
+/*Hero 3*/
+@use "../global" as *;
+.hero-3 {
+	padding-top: clamp(8.25rem, 11.5vw + 1rem, 13.75rem);
+	padding-bottom: clamp(12rem, 16.8vw + 1rem, 20rem);
+	position: relative;
+	isolation: isolate;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 45%;
+		aspect-ratio: 1;
+		border-radius: 50%;
+		background-color: rgba(var(--bs-light-rgb), 0.05);
+		opacity: var(--before-opacity, 0);
+		z-index: -2;
+		pointer-events: none;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 25%;
+		aspect-ratio: 1;
+		border-radius: 50%;
+		background-color: rgba(var(--bs-light-rgb), 0.05);
+		opacity: var(--after-opacity, 0);
+		z-index: -2;
+		pointer-events: none;
+	}
+	&__img {
+		display: none;
+		@include screen(lg) {
+			display: block;
+			position: absolute;
+			left: 30%;
+			bottom: 0;
+			transform: translateX(-50%);
+		}
+		@include screen(xxl) {
+			left: 40%;
+		}
+	}
+	&__element {
+		display: none;
+		@media (min-width: 1600px) {
+			display: block;
+			position: absolute;
+			opacity: 0.1;
+			z-index: -1;
+			pointer-events: none;
+			&--1 {
+				top: 15%;
+				left: 5%;
+			}
+			&--2 {
+				top: 12%;
+				left: 15%;
+			}
+			&--3 {
+				top: 15%;
+				right: 5%;
+			}
+			&--4 {
+				top: 12%;
+				right: 22%;
+			}
+		}
+	}
+}

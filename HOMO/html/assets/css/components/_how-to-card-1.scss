@@ -1,0 +1,18 @@
+/*How to Card 1*/
+@use "../global" as *;
+.how-to-card-1 {
+	padding: rem(80) rem(40);
+	background-image: url(../img/shape/how-to-card-1-bg.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	@include screen(sm) {
+		padding: rem(80) rem(96);
+	}
+	@include screen(md) {
+		padding: rem(80) rem(40);
+	}
+	@include screen(lg) {
+		padding: rem(80) rem(60);
+	}
+}

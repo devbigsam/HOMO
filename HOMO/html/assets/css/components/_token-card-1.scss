@@ -1,0 +1,26 @@
+/*Token Card 1*/
+@use "../global" as *;
+.token-card-1 {
+	padding: 3rem 1.5rem;
+	position: relative;
+	isolation: isolate;
+	background-image: url(../img/shape/token-card-bg-1.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	@include screen(sm) {
+		padding: 5rem 3rem;
+	}
+	@include screen(md) {
+		padding: rem(120) rem(90);
+	}
+	&__img {
+		display: none;
+		@media (min-width: 1920px) {
+			display: block;
+            position: absolute;
+            left: calc(100% - 3rem);
+            bottom: 0;
+		}
+	}
+}

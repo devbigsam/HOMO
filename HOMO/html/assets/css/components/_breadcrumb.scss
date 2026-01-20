@@ -1,0 +1,21 @@
+/* Breadcrumb Style */
+.breadcrumb-modifier {
+	--bs-breadcrumb-padding-x: 0;
+	--bs-breadcrumb-padding-y: 0;
+	--bs-breadcrumb-margin-bottom: 0;
+	--bs-breadcrumb-divider-color: #{var(--bs-light)};
+	--bs-breadcrumb-item-padding-x: 0.5rem;
+	--bs-breadcrumb-item-active-color: #{var(--bs-light)};
+	--bs-breadcrumb-divider: "\F285";
+	align-items: center;
+	.breadcrumb-item + .breadcrumb-item::before {
+		display: inline-block;
+		float: none;
+		font-family: bootstrap-icons !important;
+		font-style: normal;
+		font-weight: 400 !important;
+		font-variant: normal;
+		text-transform: none;
+		vertical-align: middle;
+	}
+}

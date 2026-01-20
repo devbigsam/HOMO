@@ -1,0 +1,10 @@
+/*FAQ Section 2*/
+@use "../global" as *;
+.faq-section-2 {
+	position: relative;
+	isolation: isolate;
+	background-image: url(../img/shape/faq-bg-3.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
