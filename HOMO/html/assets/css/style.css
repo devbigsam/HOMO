@@ -2808,10 +2808,14 @@ small,
     color: rgba(var(--bs-light-rgb), 1);
     z-index: 9999;
 }
-.pl__video {
+.pl__favicon {
     width: 4em;
     height: 4em;
     border-radius: 50%;
+}
+.meme-img {
+    height: 250px;
+    object-fit: cover;
 }
 .preloader .pl {
     display: flex;
