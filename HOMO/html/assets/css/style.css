@@ -2808,6 +2808,11 @@ small,
     color: rgba(var(--bs-light-rgb), 1);
     z-index: 9999;
 }
+.pl__video {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+}
 .preloader .pl {
     display: flex;
     flex-direction: column;
