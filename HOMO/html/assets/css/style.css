@@ -4149,7 +4149,7 @@ small,
 .faq-section-1 {
     position: relative;
     isolation: isolate;
-    background-image: url(../img/about-img-2.png);
+    background-image: url('assets/img/about-img-2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
