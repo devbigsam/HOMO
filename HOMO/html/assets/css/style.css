@@ -90,8 +90,8 @@
 ---------------------------------------*/
 /*About Card 1*/
 :root {
-    --bs-primary: #ff0000;
-    --bs-primary-rgb: 255, 0, 0;
+    --bs-primary: #FFB6C1;
+    --bs-primary-rgb: 255, 182, 193;
     --h1: clamp(2.7rem, 3.789vw + 1rem, 4.5rem);
     --h2: clamp(2.4rem, 3.368vw + 1rem, 4rem);
     --h3: clamp(1.8rem, 2.526vw + 1rem, 3rem);
@@ -1220,6 +1220,11 @@ small,
     background-color: var(--bs-primary);
     border-radius: 50%;
     z-index: -1;
+}
+.btn-light-pink {
+    --bs-btn-bg: #FFB6C1;
+    --bs-btn-color: var(--bs-dark);
+    --bs-btn-border-color: #FFB6C1;
 }
 /* Card Style */
 .card {
@@ -4139,12 +4144,12 @@ small,
     .cta-2 {
         margin-top: -7.5rem;
     }
-}
+}ene
 /*FAQ Section 1*/
 .faq-section-1 {
     position: relative;
     isolation: isolate;
-    background-image: url(../img/shape/faq-bg-1.png);
+    background-image: url(../img/about-img-2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
